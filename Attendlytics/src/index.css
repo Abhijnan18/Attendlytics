@@ -3,9 +3,5 @@
 @tailwind utilities;
 
 body {
-  @apply bg-gradient-to-br from-gradient1 to-gradient2 text-gray-100;
-}
-
-.section-gradient {
-  @apply bg-gradient-to-br from-gradient1/50 to-gradient2/50 backdrop-blur-lg;
+  @apply bg-[#050505] text-gray-100;
 }

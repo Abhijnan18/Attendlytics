@@ -1,28 +1,17 @@
-import { motion } from "framer-motion";
-
 export default function Navbar() {
   return (
-    <motion.nav
-      initial={{ y: -100, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-      className="p-6 border-b border-gray-800/50 section-gradient"
-    >
+    <nav className="p-6 border-b border-gray-800/50 bg-[#050505]">
       <div className="container mx-auto flex justify-between items-center">
-        <motion.div
-          whileHover={{ scale: 1.05 }}
-          className="flex items-center space-x-2"
-        >
-          <span className="text-2xl font-bold text-accent">AttendLytics</span>
-        </motion.div>
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="bg-accent/10 hover:bg-accent/20 text-accent px-6 py-2 rounded-full transition-all border border-gray-700/50"
-        >
+        <div className="flex items-center space-x-2">
+          <span className="text-2xl text-gray-100">
+            <span className="font-bold">A</span>
+            <span className="text-3xl italic text-gray-100">L</span>
+          </span>
+        </div>
+        <button className="bg-gray-800 text-gray-100 px-6 py-2 rounded-full hover:bg-gray-700 transition-colors">
           Get Started
-        </motion.button>
+        </button>
       </div>
-    </motion.nav>
+    </nav>
   );
 }
