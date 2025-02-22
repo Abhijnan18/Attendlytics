@@ -3,10 +3,9 @@
 @tailwind utilities;
 
 body {
-  @apply bg-gray-950 text-gray-50;
+  @apply bg-gradient-to-br from-gradient1 to-gradient2 text-gray-100;
 }
 
-/* Custom styles */
-.glow-text {
-  text-shadow: 0 0 10px rgba(125, 211, 252, 0.5);
+.section-gradient {
+  @apply bg-gradient-to-br from-gradient1/50 to-gradient2/50 backdrop-blur-lg;
 }
